@@ -1,28 +1,84 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Project Files</title>
-  <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alan Clarke | Executive Strategist</title>
+  <link href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="Logo" class="logo">
-    <h1>Project Files</h1>
-  </header>
+  <nav class="container-fluid">
+    <ul>
+      <li><strong>Alan Clarke</strong></li>
+    </ul>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact" role="button">Contact</a></li>
+    </ul>
+  </nav>
 
-  <main>
-    <label for="folderSelect">Select Folder to View Files</label>
-    <select id="folderSelect" onchange="loadFiles()">
-      <option value="">-- Select --</option>
-      <option value="draft contracts">Draft Contracts</option><option value="drawings">Drawings</option><option value="folios">Folios</option><option value="quotes">Quotes</option><option value="renders">Renders</option><option value="videos">Videos</option>
-    </select>
+  <main class="container">
+    <div class="grid">
+      <section>
+        <hgroup>
+          <h2>Executive Strategist, Leader & Negotiator</h2>
+          <h3>Driving growth through commercial leadership and strategic vision</h3>
+        </hgroup>
+        <p>
+          With over 15 years of experience in commercial leadership, Alan Clarke is a results-driven strategist with a proven track record in sales growth, strategic negotiation, private equity, and global event planning. Founder of Mayweather Ltd and inXtremis, Alan brings together business insight, operational excellence, and high-impact leadership.
+        </p>
 
-    <ul id="fileList"></ul>
-    <div id="viewer"></div>
+        <p><a href="Alan_Clarke_CV_2025.pdf" role="button">Download CV</a></p>
+
+        <figure>
+          <img src="https://images.unsplash.com/photo-1587614382346-ac7f4c27787d" alt="Executive profile" />
+          <figcaption><a href="https://unsplash.com/photos/person-in-suit" target="_blank">Image via Unsplash</a></figcaption>
+        </figure>
+
+        <h3>Executive Competencies</h3>
+        <p>
+          Strategic Leadership • Negotiation • Private Equity • B2B Sales • Project Management • Public Speaking • Lean Manufacturing • M&A • Pricing Strategy
+        </p>
+
+        <h3>Professional Overview</h3>
+        <p>
+          Alan led Colorman Ireland to multi-million euro growth, driving key partnerships and negotiating a company sale at 7x EBITDA. At Mayweather Ltd, he identifies and scales high-potential ventures. Through inXtremis, he orchestrates motivational events across EMEA, including high-profile speakers and luxury venues.
+        </p>
+
+        <h3 id="experience">Career Timeline</h3>
+        <ul>
+          <li><strong>2006–2011:</strong> Print Media Technician at Colorman Ireland – Developed technical expertise in print & manufacturing through a rigorous apprenticeship.</li>
+          <li><strong>2012–2017:</strong> Overseas Sales Manager – Increased international revenue from €500K to €9M+, expanded into pharma, tech, and gifting sectors.</li>
+          <li><strong>2017–2021:</strong> Commercial Director, Colorman – Led pricing, negotiated high-value contracts, and helped sell the company at 7× EBITDA.</li>
+          <li><strong>2021–Present:</strong> Founder & CEO of Mayweather Ltd – Private equity investments focused on scalable, strategic business growth.</li>
+          <li><strong>2022–Present:</strong> Founder of inXtremis – Built and hosted leadership events across EMEA with keynote speakers like David Goggins.</li>
+        </ul>
+      </section>
+    </div>
   </main>
+
+  <section aria-label="Subscribe example">
+    <div class="container">
+      <article>
+        <hgroup>
+          <h2>Connect With Alan</h2>
+          <h3>Subscribe for updates or reach out to explore opportunities</h3>
+        </hgroup>
+        <form class="grid">
+          <input type="text" id="firstname" name="firstname" placeholder="Your name" aria-label="Name" required />
+          <input type="email" id="email" name="email" placeholder="Your email" aria-label="Email" required />
+          <button type="submit" onclick="event.preventDefault()">Subscribe</button>
+        </form>
+      </article>
+    </div>
+  </section>
+
+  <footer class="container">
+    <small>
+      <a href="mailto:alan@mayweatherltd.com">alan@mayweatherltd.com</a> • 
+      <a href="https://www.linkedin.com">LinkedIn</a>
+    </small>
+  </footer>
 </body>
 </html>
